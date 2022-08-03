@@ -12,7 +12,17 @@ export MYSTRING="astring"
 echo "${MYSTRING}"
 bash -c 'echo "MYSTRING:"${MYSTRING}'
 bash -c 'echo "MYSTRING:"${MYSTRING}'
+(
+    echo ">>>Hi from subshell"
+    echo ">>>MYSTRING:""${MYSTRING}"
+    echo ">>>Bye from subshell"
+)
 NEWSTRING="newstring"
 echo "${NEWSTRING}"
 bash -c 'echo "MYSTRING:"${MYSTRING}'
 bash -c 'echo "NEWSTRING:"${NEWSTRING}'
+(
+    echo ">>>Hi from subshell"
+    echo ">>>MYSTRING:""${NEWSTRING}"
+    echo ">>>Bye from subshell"
+)
